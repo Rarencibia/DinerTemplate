@@ -1,0 +1,131 @@
+.navWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px $hover-color;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    margin: 2px;
+
+
+    .logo{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15%;
+        height: 80px;
+        &:hover{
+            background-color: lightgray;
+        }
+    }
+
+    h4 {
+        cursor: pointer;
+        width: 100%;
+        position: relative;
+        font-family: $logo-Font;
+        font-size: 31px;
+        color: white!important;
+        left: 20px;
+        text-shadow: 5px 3px 7px black;
+        &:before{
+            position: absolute;
+            color: black;
+            left: -2px;
+            top: -3.5px;
+            content: 'Best Steaks';
+            font-size: 32px;
+        }
+        &:after {
+            color: white!important;
+            content: 'Best Steaks';
+            position: absolute;
+            font-size: 31px;
+            left: 0px;
+
+            
+        }
+    }
+
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        width: 85%;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        width: 200px;
+        height: 50px;
+        font-size: 30px;
+        list-style: none;
+        &:hover {
+            cursor: pointer;
+            background: lightgray;
+        }
+    }
+
+    h4 a{
+        text-decoration: none;
+        color: white;
+
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+}
+
+
+.mainImageWrapper {
+    width: 80%;
+    margin: auto;
+    .mainImage {
+        width: 100%;
+    
+    }
+}
+
+
+@media screen and (max-width:950px) {
+    .mainImageWrapper {
+        width: 100%;
+    }
+
+    .logo, h4{
+        display: none!important;
+    }
+    ul {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .logo, h4{
+        display: none!important;
+    }
+    ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1550px) {
+    .logo{
+        width: 100%!important;
+    }
+    ul {
+        width: 50%!important;
+
+    }
+
+}
+

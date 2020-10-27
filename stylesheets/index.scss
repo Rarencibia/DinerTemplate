@@ -1,0 +1,185 @@
+$logo-Font : 'Bungee Inline', cursive;
+$margin-between-sections : 200px;
+$hover-color: lightgray;
+$header-font: 'Playfair Display', serif;
+$header-letter-spacing: 5px;
+
+// Media Query variables
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$cell-width: 350px;
+
+
+@import './nav';
+@import './footer';
+
+
+
+
+
+html body{
+    margin: 0;
+    padding: 0;
+    display: block;
+
+    p{
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+
+
+
+
+main {
+    width: 60%;
+    margin: auto;
+
+
+    .aboutWrapper {
+        width: 100%;
+        margin-top: $margin-between-sections;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        align-items: center;
+        display: 5px solid black;
+    }
+
+    .aboutImageWrapper {
+        width: 50%;
+    }
+
+    .aboutImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutInfo {
+        text-align: left;
+        width: 40%;
+        font-size: 20px
+    }
+
+    h1,h5 {
+        text-align: center;
+        letter-spacing: $header-letter-spacing;
+        font-family: $header-font;
+    }
+
+    p {
+        line-height: 1.5;
+        text-align: left;
+    }
+    .subInfo {
+        line-height: 1.5;
+        text-align: left;
+        opacity: .60;
+    }
+
+    
+
+}
+
+.menuWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $margin-between-sections;
+    flex-wrap: wrap;
+
+    .menuItemsWrapper{
+        line-height: 35px;
+    }
+    .menuImgWrapper{
+        width: 40%;
+    }
+    
+    .menuSteakImg{
+        width: 100%;
+    }
+    h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1, h3 {
+        letter-spacing: $header-letter-spacing;
+        font-family: $header-font;
+    }
+    p {
+        opacity: .60;
+    }
+}
+
+.contactWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: $margin-between-sections;
+    
+    h2{
+        text-align: left;
+        letter-spacing: $header-letter-spacing;
+    }
+
+    .emphasizeAddress {
+        font-weight: bold;
+        color: gray;
+    }
+
+    .reservationForm {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    .reservationInput {
+        color: gray;
+        margin-top: 1px; /*This is so the focus border doesn't push up against the text for space*/
+        border: none;
+        border-bottom: 1px solid $hover-color;
+        margin: auto;
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 15px;
+
+        &:focus{
+            border: 1px black solid;
+        } 
+    }
+
+    .formButton {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        border: none;
+        background-color: white;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $hover-color;
+        }
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    main {
+        width: 100%;
+    }
+    .menuImgWrapper{
+        margin: auto;
+        width: 80%!important;
+
+        .menuSteakImg{
+            width: 100%;
+        }
+    }
+    .aboutImageWrapper{
+        display: none;
+    }
+    .aboutInfo {
+        width: 100%!important;
+    }
+}

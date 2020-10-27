@@ -1,0 +1,347 @@
+.navWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 3px 3px 3px lightgray;
+          box-shadow: 3px 3px 3px lightgray;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  margin: 2px;
+}
+
+.navWrapper .logo {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15%;
+  height: 80px;
+}
+
+.navWrapper .logo:hover {
+  background-color: lightgray;
+}
+
+.navWrapper h4 {
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  font-family: "Bungee Inline", cursive;
+  font-size: 31px;
+  color: white !important;
+  left: 20px;
+  text-shadow: 5px 3px 7px black;
+}
+
+.navWrapper h4:before {
+  position: absolute;
+  color: black;
+  left: -2px;
+  top: -3.5px;
+  content: 'Best Steaks';
+  font-size: 32px;
+}
+
+.navWrapper h4:after {
+  color: white !important;
+  content: 'Best Steaks';
+  position: absolute;
+  font-size: 31px;
+  left: 0px;
+}
+
+.navWrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 85%;
+}
+
+.navWrapper li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12px;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  list-style: none;
+}
+
+.navWrapper li:hover {
+  cursor: pointer;
+  background: lightgray;
+}
+
+.navWrapper h4 a {
+  text-decoration: none;
+  color: white;
+}
+
+.navWrapper ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainImageWrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.mainImageWrapper .mainImage {
+  width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+  .mainImageWrapper {
+    width: 100%;
+  }
+  .logo, h4 {
+    display: none !important;
+  }
+  ul {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo, h4 {
+    display: none !important;
+  }
+  ul {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1550px) {
+  .logo {
+    width: 100% !important;
+  }
+  ul {
+    width: 50% !important;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+html body p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+  width: 60%;
+  margin: auto;
+}
+
+main .aboutWrapper {
+  width: 100%;
+  margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: 5px solid black;
+}
+
+main .aboutImageWrapper {
+  width: 50%;
+}
+
+main .aboutImage {
+  width: 100%;
+  height: auto;
+}
+
+main .aboutInfo {
+  text-align: left;
+  width: 40%;
+  font-size: 20px;
+}
+
+main h1, main h5 {
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: "Playfair Display", serif;
+}
+
+main p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+main .subInfo {
+  line-height: 1.5;
+  text-align: left;
+  opacity: .60;
+}
+
+.menuWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menuWrapper .menuItemsWrapper {
+  line-height: 35px;
+}
+
+.menuWrapper .menuImgWrapper {
+  width: 40%;
+}
+
+.menuWrapper .menuSteakImg {
+  width: 100%;
+}
+
+.menuWrapper h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menuWrapper h1, .menuWrapper h3 {
+  letter-spacing: 5px;
+  font-family: "Playfair Display", serif;
+}
+
+.menuWrapper p {
+  opacity: .60;
+}
+
+.contactWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 200px;
+}
+
+.contactWrapper h2 {
+  text-align: left;
+  letter-spacing: 5px;
+}
+
+.contactWrapper .emphasizeAddress {
+  font-weight: bold;
+  color: gray;
+}
+
+.contactWrapper .reservationForm {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contactWrapper .reservationInput {
+  color: gray;
+  margin-top: 1px;
+  /*This is so the focus border doesn't push up against the text for space*/
+  border: none;
+  border-bottom: 1px solid lightgray;
+  margin: auto;
+  width: 100%;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.contactWrapper .reservationInput:focus {
+  border: 1px black solid;
+}
+
+.contactWrapper .formButton {
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  border: none;
+  background-color: white;
+}
+
+.contactWrapper .formButton:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    width: 100%;
+  }
+  .menuImgWrapper {
+    margin: auto;
+    width: 80% !important;
+  }
+  .menuImgWrapper .menuSteakImg {
+    width: 100%;
+  }
+  .aboutImageWrapper {
+    display: none;
+  }
+  .aboutInfo {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */
