@@ -1,5 +1,6 @@
 $logo-Font : 'Bungee Inline', cursive;
 $margin-between-sections : 200px;
+$margin-sections-mobile: 60px;
 $hover-color: lightgray;
 $header-font: 'Playfair Display', serif;
 $header-letter-spacing: 5px;
@@ -188,5 +189,17 @@ main {
     }
     .aboutInfo {
         width: 100%!important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contactWrapper {
+        margin-top: $margin-sections-mobile !important;
+    }
+    .menuWrapper {
+        margin-top: $margin-sections-mobile !important;
+    }
+    .aboutWrapper {
+        margin-top: $margin-sections-mobile!important;
     }
 }

@@ -116,6 +116,13 @@
   .logo {
     width: 35% !important;
   }
+  .mainImageWrapper {
+    width: 100% !important;
+  }
+  .mainImageWrapper .mainImage {
+    width: 100% !important;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 720px) {
@@ -323,6 +330,18 @@ main .subInfo {
   }
   .aboutInfo {
     width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactWrapper {
+    margin-top: 60px !important;
+  }
+  .menuWrapper {
+    margin-top: 60px !important;
+  }
+  .aboutWrapper {
+    margin-top: 60px !important;
   }
 }
 /*# sourceMappingURL=index.css.map */
