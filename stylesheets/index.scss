@@ -90,6 +90,7 @@ main {
 
     .menuItemsWrapper{
         line-height: 35px;
+        width: 40%;
     }
     .menuImgWrapper{
         width: 40%;
@@ -165,8 +166,9 @@ main {
 
 
 @media screen and (max-width:900px) {
+
     main {
-        width: 100%;
+        width: 90%;
     }
     .menuImgWrapper{
         margin: auto;
@@ -175,6 +177,11 @@ main {
         .menuSteakImg{
             width: 100%;
         }
+
+    }
+
+    .menuItemsWrapper {
+        width: 100%!important;
     }
     .aboutImageWrapper{
         display: none;

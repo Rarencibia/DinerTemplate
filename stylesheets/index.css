@@ -12,12 +12,12 @@
           box-shadow: 3px 3px 3px lightgray;
   z-index: 1;
   width: 100%;
+  height: 60px;
   overflow: hidden;
   margin: 2px;
 }
 
 .navWrapper .logo {
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,8 +27,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 15%;
-  height: 80px;
+  margin: 5px;
+  width: 150px;
+  height: 50px;
 }
 
 .navWrapper .logo:hover {
@@ -36,31 +37,22 @@
 }
 
 .navWrapper h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   width: 100%;
-  position: relative;
-  font-family: "Bungee Inline", cursive;
-  font-size: 31px;
-  color: white !important;
-  left: 20px;
-  text-shadow: 5px 3px 7px black;
-}
-
-.navWrapper h4:before {
-  position: absolute;
-  color: black;
-  left: -2px;
-  top: -3.5px;
-  content: 'Best Steaks';
-  font-size: 32px;
-}
-
-.navWrapper h4:after {
-  color: white !important;
-  content: 'Best Steaks';
-  position: absolute;
-  font-size: 31px;
-  left: 0px;
+  letter-spacing: 5px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: black !important;
 }
 
 .navWrapper ul {
@@ -83,10 +75,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 12px;
-  width: 200px;
-  height: 50px;
-  font-size: 30px;
+  padding: 8px 16px;
+  letter-spacing: 5px;
+  width: 70px;
+  margin: 2px;
+  height: 20px;
+  font-size: 18px;
   list-style: none;
 }
 
@@ -97,10 +91,11 @@
 
 .navWrapper h4 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .navWrapper ul li a {
+  display: block;
   text-decoration: none;
   color: black;
 }
@@ -114,36 +109,18 @@
   width: 100%;
 }
 
-@media screen and (max-width: 950px) {
-  .mainImageWrapper {
-    width: 100%;
-  }
-  .logo, h4 {
-    display: none !important;
-  }
-  ul {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 600px) {
-  .logo, h4 {
+  ul {
     display: none !important;
   }
-  ul {
-    width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .logo {
+    width: 35% !important;
   }
 }
 
-@media screen and (min-width: 950px) and (max-width: 1550px) {
+@media screen and (min-width: 601px) and (max-width: 720px) {
   .logo {
-    width: 100% !important;
-  }
-  ul {
-    width: 50% !important;
+    width: 35% !important;
   }
 }
 
@@ -235,6 +212,7 @@ main .subInfo {
 
 .menuWrapper .menuItemsWrapper {
   line-height: 35px;
+  width: 40%;
 }
 
 .menuWrapper .menuImgWrapper {
@@ -328,7 +306,7 @@ main .subInfo {
 
 @media screen and (max-width: 900px) {
   main {
-    width: 100%;
+    width: 90%;
   }
   .menuImgWrapper {
     margin: auto;
@@ -336,6 +314,9 @@ main .subInfo {
   }
   .menuImgWrapper .menuSteakImg {
     width: 100%;
+  }
+  .menuItemsWrapper {
+    width: 100% !important;
   }
   .aboutImageWrapper {
     display: none;
