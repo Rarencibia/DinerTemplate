@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
     <main>
         
 
-        <section id="aboutSection">
+        <section id="aboutSection" data-aos="fade-left">
             <div class="aboutWrapper">
                 <div class="aboutImageWrapper">
                     <img class="aboutImage" src="images/aboutSteak.jpg" alt="Steak with Sauce">
@@ -45,7 +46,7 @@
             </div>
         </section>
 
-        <section id="menuSection">
+        <section id="menuSection" data-aos="fade-right">
             <div class="menuWrapper">
                 <div class="menuItemsWrapper">
                     <h1>Our Menu Items</h1>
@@ -69,7 +70,7 @@
         </section>
 
 
-        <section id="contactSection">
+        <section id="contactSection" data-aos="fade-left">
             <div class="contactWrapper">
                 <h2>Reservations</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, earum nesciunt rem laborum tempora perspiciatis dicta optio expedita possimus alias.</p>
@@ -97,6 +98,13 @@
         <p>Author: Robert Arencibia</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 400,
+          duration: 1000
+      });
+    </script>
 
 
 
